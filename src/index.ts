@@ -9,7 +9,7 @@ const main = async () => {
     const folderToCopy = core.getInput('folder-to-copy');
     const environmentPrefix = core.getInput('environment-prefix');
 
-    const bucketName = `${bucketPrefix}`;
+    const bucketName = `${bucketPrefix.toLowerCase()}`;
 
     console.log(`Bucket Name: ${bucketName}`);
 
