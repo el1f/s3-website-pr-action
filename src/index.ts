@@ -9,8 +9,7 @@ const main = async () => {
     const folderToCopy = core.getInput('folder-to-copy');
     const environmentPrefix = core.getInput('environment-prefix');
 
-    const prNumber = github.context.payload.pull_request!.number;
-    const bucketName = `${bucketPrefix}-pr${prNumber}`;
+    const bucketName = `${bucketPrefix}`;
 
     console.log(`Bucket Name: ${bucketName}`);
 
